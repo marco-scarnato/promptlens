@@ -1,5 +1,5 @@
 import pytest
-from promptguard import count_tokens, context_usage, truncate_to_limit
+from promptlens import count_tokens, context_usage, truncate_to_limit
 
 
 class TestCountTokensReturnType:

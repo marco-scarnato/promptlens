@@ -4,7 +4,7 @@ import os
 import tempfile
 
 import pytest
-from promptguard import Tracker
+from promptlens import Tracker
 
 
 # ---------------------------------------------------------------------------

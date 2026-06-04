@@ -1,6 +1,6 @@
-from promptguard._core import count_tokens as _count_tokens
-from promptguard._core import context_usage as _context_usage
-from promptguard._core import truncate_to_limit as _truncate_to_limit
+from promptlens._core import count_tokens as _count_tokens
+from promptlens._core import context_usage as _context_usage
+from promptlens._core import truncate_to_limit as _truncate_to_limit
 
 
 def count_tokens(text: str) -> int:

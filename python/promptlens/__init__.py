@@ -1,5 +1,5 @@
-from promptguard.tokens import count_tokens, context_usage, truncate_to_limit
-from promptguard.guardrails import (
+from promptlens.tokens import count_tokens, context_usage, truncate_to_limit
+from promptlens.guardrails import (
     contains_pii,
     redact_pii,
     CustomRule,
@@ -7,7 +7,7 @@ from promptguard.guardrails import (
     GuardCore,
     GuardChecker,
 )
-from promptguard.tracker import Tracker
+from promptlens.tracker import Tracker
 
 __all__ = [
     "count_tokens",

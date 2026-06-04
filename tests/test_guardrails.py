@@ -1,5 +1,5 @@
 import pytest
-from promptguard import contains_pii, redact_pii, CustomRule, RuleMatch, GuardChecker
+from promptlens import contains_pii, redact_pii, CustomRule, RuleMatch, GuardChecker
 
 
 # ── contains_pii / redact_pii (convenience wrappers) ─────────────────────────

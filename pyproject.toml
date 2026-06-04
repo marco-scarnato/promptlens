@@ -3,7 +3,7 @@ requires = ["maturin>=1.13,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "promptguard"
+name = "promptlens"
 description = "Python/Rust library for LLM prompt analysis and protection"
 readme = "README.md"
 authors = [{name = "Marco Scarna", email = "marcscarn@gmail.com"}]
@@ -35,7 +35,7 @@ Issues = "https://github.com/marco-scarnato/promptlens/issues"
 
 [tool.maturin]
 python-source = "python"
-module-name = "promptguard._core"
+module-name = "promptlens._core"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

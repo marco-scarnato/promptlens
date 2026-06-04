@@ -1,10 +1,10 @@
 [package]
-name = "promptguard"
+name = "promptlens"
 version = "0.1.0"
 edition = "2024"
 
 [lib]
-name = "promptguard"
+name = "promptlens"
 crate-type = ["cdylib"]
 path = "rust/src/lib.rs"
 

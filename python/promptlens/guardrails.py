@@ -3,9 +3,9 @@ from __future__ import annotations
 import json
 from typing import Optional
 
-from promptguard._core import contains_pii as _contains_pii
-from promptguard._core import redact_pii as _redact_pii
-from promptguard._core import CustomRule, RuleMatch, GuardCore
+from promptlens._core import contains_pii as _contains_pii
+from promptlens._core import redact_pii as _redact_pii
+from promptlens._core import CustomRule, RuleMatch, GuardCore
 
 
 # ── Convenience wrappers ──────────────────────────────────────────────────────
