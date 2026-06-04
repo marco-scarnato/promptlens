@@ -1,11 +1,6 @@
-from promptlens._core import count_tokens as _count_tokens
-from promptlens._core import context_usage as _context_usage
-from promptlens._core import truncate_to_limit as _truncate_to_limit
-
-
 def count_tokens(text: str) -> int:
     """Return the number of tokens in *text* (~4 chars/token approximation)."""
-    return int(_count_tokens(text))
+    return len(text) // 4
 
 
 def context_usage(text: str, context_window: int) -> float:
@@ -22,7 +17,9 @@ def context_usage(text: str, context_window: int) -> float:
     Raises:
         ValueError: If *context_window* is 0.
     """
-    return float(_context_usage(text, context_window))
+    if context_window == 0:
+        raise ValueError("context_window must be greater than 0")
+    return (len(text) // 4) / context_window * 100.0
 
 
 def truncate_to_limit(text: str, max_tokens: int) -> str:
@@ -30,5 +27,8 @@ def truncate_to_limit(text: str, max_tokens: int) -> str:
 
     If the text already fits, it is returned unchanged.
     """
-    return str(_truncate_to_limit(text, max_tokens))
+    max_chars = max_tokens * 4
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars]
 
