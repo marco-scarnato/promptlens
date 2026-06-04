@@ -4,8 +4,34 @@ build-backend = "maturin"
 
 [project]
 name = "promptguard"
+description = "Python/Rust library for LLM prompt analysis and protection"
+readme = "README.md"
+authors = [{name = "Marco Scarna", email = "marcscarn@gmail.com"}]
+license = {text = "Apache-2.0"}
 requires-python = ">=3.8"
 dynamic = ["version"]
+keywords = ["llm", "prompt", "guardrails", "pii", "tokenizer", "security", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Rust",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Security",
+    "Topic :: Text Processing",
+]
+
+[project.urls]
+Homepage = "https://github.com/marco-scarnato/promptlens"
+Repository = "https://github.com/marco-scarnato/promptlens"
+Issues = "https://github.com/marco-scarnato/promptlens/issues"
 
 [tool.maturin]
 python-source = "python"

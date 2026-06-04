@@ -2,7 +2,7 @@ import csv
 import json
 import os
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 class Tracker:
@@ -63,7 +63,7 @@ class Tracker:
         """
         record = {
             "id": str(uuid.uuid4()),
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "model": model,
             "template": template,
             "params": params,
