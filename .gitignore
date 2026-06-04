@@ -37,6 +37,7 @@ pip-log.txt
 # Local developer notes (non committare)
 .rust-clarify.md
 .python-library-clarify.md
+.pypi-git-clarify.md
 pip-delete-this-directory.txt
 pip-selfcheck.json
 
