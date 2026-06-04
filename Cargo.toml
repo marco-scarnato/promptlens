@@ -1,0 +1,15 @@
+[package]
+name = "promptguard"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "promptguard"
+crate-type = ["cdylib"]
+path = "rust/src/lib.rs"
+
+[dependencies]
+pyo3   = { version = "0.28.3", features = ["extension-module"] }
+regex  = "1"
+once_cell = "1"
+rayon  = "1"
